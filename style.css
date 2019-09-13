@@ -6,7 +6,7 @@ nav {
     height: 3rem;
     margin-left: 0.1rem;
     margin-right: 0.1rem;
-    background-color: gray;   
+    background-color:grey; 
 }
 ul {
     margin-top: 0px;
@@ -27,19 +27,28 @@ ul li {
     padding: 1rem;
 }
 .carousel {
-    background-color: rgb(211, 211, 211);
+    background-color: #D8D8D8;
     height: 9rem;
     margin-left: 0.1rem;
     margin-right: 0.1rem;
     
 }
-article {
-    margin: 0px 5rem 1rem 5rem;
-    background-color: rgb(211,211,211);
-    height: 20vh;
-    width: 500px;
-    display: inline-block;
 
+.follow {
+    padding:20px 0;  
+    text-align: center;
+}
+
+article{
+   display:inline-block;
+   background: #e0e0e0;
+   width: 30%;
+   height:300px;
+   margin :0.3%;
+}
+
+section.articles{
+   text-align: center;
 }
    
 
@@ -51,97 +60,35 @@ hr {
     margin-right: 1rem;
 }
 
-form h2 {
+
+
+form {
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
 }
 
-input, textarea {
-    margin-left: 8rem;
-     
-}
-textarea {
-    width: 80%;
-}
-input {
-    width: 80%;
-    margin-top: 0.5rem;
-}
-#button{
-    display:flex;
-    margin-left: 41rem;
-    
-    
+input,textarea{
+
+    display: block;
+    width: 70vw;
+    padding:15px;
+    margin:5px auto;
+    border: 1px solid black;
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-}
 
-/* DESKTOP */
-@media screen and (min-width: 962px) {
 
-}
-
-/* MOBILE */
-@media screen and (max-width:762px) {
-section {
-    flex-direction: column;
-}
-
-article {
-    width: 80vw;
-}
-}
-
-/* TABLET */
-@media screen and (min-width:763px) and (max-width:961px){
-
-    section {
-        flex-direction: column;
+@media screen and ( max-width:961px){
+    .articles{
+        display: none;
+    }
+    .carousel{
+        display: none;
+    }
+    .follows{
+        margin: 10vh;
     }
 
-article {
-    margin-left: 1rem;
-    margin-bottom: 5rem;
-    background-color: rgb(211, 211, 211);
-    width: 280px;
-    height: 250px;
-    display: inline-block;
-}
-   
-
-
-hr {
-    background-color: black;
-    height: 0.3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
-form h2 {
-    margin-left: 0.3rem;
-    margin-bottom: 0.3rem;
-    margin-top: 0.2rem;
-}
-
-input, textarea {
-    margin-left: 4rem;
-     
-}
-textarea {
-    width: 40%;
-}
-input {
-    width: 40%;
-    margin-top: 0.3rem;
-}
-#button{
-    display:flex;
-    margin-left: 40rem;
-    
-    
-}
-}
